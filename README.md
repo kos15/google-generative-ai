@@ -1,70 +1,99 @@
-# Getting Started with Create React App
+# GPT Chat Application 🚀
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React-based chat application that integrates with Google's Gemini API to generate responses using AI. The application features Markdown rendering, syntax highlighting for code blocks, and a smooth scrolling chat interface.
 
-## Available Scripts
+![Gemini Logo](https://www.gstatic.com/lamda/images/gemini_wordmark_landing_page_38486af5590c0738b60cd.svg) 
 
-In the project directory, you can run:
+## Features ✨
 
-### `npm start`
+- 🗣️ User-friendly chat interface with prompt input
+- 🤖 AI-generated responses using the Gemini API
+- 📝 Markdown rendering with syntax highlighting
+- ⏳ Animated loading indicator while responses are being generated
+- 🔄 Automatic scrolling to the latest message
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Prerequisites 📋
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Node.js (v14.x or later)
+- npm (v6.x or later) or yarn (v1.x or later)
 
-### `npm test`
+## Installation 🛠️
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
 
-### `npm run build`
+    ```bash
+    git clone https://github.com/your-username/gpt-chat-application.git
+    cd gpt-chat-application
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Install the dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Set up the Gemini API:
+   - Follow the [official Gemini API tutorial](https://ai.google.dev/gemini-api/docs/get-started/tutorial?lang=web#set-up-project) to set up your project and obtain your API key.
 
-### `npm run eject`
+4. Paste your generated API key in the `environment.js` file inside the environment folder:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    ```env
+    API_KEY=your-gemini-api-key
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Usage 🚀
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Start the development server:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    ```bash
+    npm start
+    # or
+    yarn start
+    ```
 
-## Learn More
+2. Open your browser and navigate to `http://localhost:3000` to view the application.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Screenshots 📸
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![Screenshot 1](https://github.com/kos15/google-generative-ai/blob/main/public/Screenshot2.png) 
+![Screenshot 2](https://github.com/kos15/google-generative-ai/blob/main/public/Screenshot1.png) 
 
-### Code Splitting
+## Components 🧩
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### App Component
 
-### Analyzing the Bundle Size
+The main component that manages the state of the application and handles user input and AI responses.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Card Component
 
-### Making a Progressive Web App
+A component that renders individual chat messages. Supports Markdown rendering with syntax highlighting for code blocks.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Loading Animation
 
-### Advanced Configuration
+An animated loading indicator that shows while waiting for the AI to generate a response.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## CSS Styles 💅
 
-### Deployment
+Custom styles for the application, including Markdown text styling and loading animation.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## License 📄
 
-### `npm run build` fails to minify
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contributing 🤝
+
+Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
+
+## Acknowledgements 🙌
+
+- [React](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [React Markdown](https://github.com/remarkjs/react-markdown)
+- [React Syntax Highlighter](https://github.com/react-syntax-highlighter/react-syntax-highlighter)
+- [Google's Gemini API](https://ai.google.dev/gemini-api/docs/get-started/tutorial?lang=web#set-up-project)
+
+## Stay Updated 🔔
+
+For the latest updates on web development, Angular, and related topics, please follow me on [LinkedIn](https://www.linkedin.com/in/koustubhmishra/).
