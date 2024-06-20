@@ -1,13 +1,94 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.width-fit-content{
+    width: fit-content !important;
+    max-width: 75% !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* App.css or another CSS file */
+.dot-wave {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #09f;
+    border-radius: 50%;
+    animation: wave 1.5s infinite ease-in-out;
+  }
+  
+  .dot:nth-child(1) {
+    animation-delay: -0.4s;
+  }
+  
+  .dot:nth-child(2) {
+    animation-delay: -0.2s;
+  }
+  
+  .dot:nth-child(3) {
+    animation-delay: 0s;
+  }
+  
+  @keyframes wave {
+    0%, 60%, 100% {
+      transform: translateY(0);
+    }
+    30% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .break-words {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+  }
+
+  /* Markdown text styles */
+.markdown h1, .markdown h2, .markdown h3, .markdown h4, .markdown h5, .markdown h6 {
+  font-weight: 700;
+  margin: 0.5em 0;
 }
+
+.markdown p {
+  margin: 0.5em 0;
+}
+
+.markdown a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.markdown a:hover {
+  text-decoration: underline;
+}
+
+.markdown ul {
+  padding-left: 1.2em;
+}
+
+.markdown ol {
+  padding-left: 1.2em;
+}
+
+.markdown li {
+  margin-bottom: 0.5em;
+}
+
+.markdown code {
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.markdown pre{
+  padding: 8px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+  
