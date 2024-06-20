@@ -7,7 +7,7 @@ import { materialOceanic } from 'react-syntax-highlighter/dist/esm/styles/prism'
 
 function Card({ message, from }) {
   return (
-    <div className={`p-4 m-2 rounded-md max-w-xs text-base font-sans break-words width-fit-content ${from === 'bot' ? 'shadow-inner shadow-blue-500/40 self-end' : 'bg-gray-600 self-start'}`}>
+    <div className={`p-4 m-2 rounded-md max-w-xs text-base font-sans break-words width-fit-content ${from === 'bot' ? 'bg-gray-700 shadow-inner shadow-blue-500/40 self-end' : 'bg-gray-600 self-start'}`}>
       <div className="markdown">
         <ReactMarkdown
         className={`text-start`}
